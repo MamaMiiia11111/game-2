@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Стили для меню */
+  nav {
+    margin-bottom: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ff6347;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f0e68c;
+    transform: scale(1.1);
+  }
+  
+  /* Заголовок сайта */
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Анимация для заголовка */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Анимация кнопок */
+  .button {
+    padding: 15px 30px;
+    border: 2px solid #ff6347;
+    background-color: transparent;
+    color: #ff6347;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff6347;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Контейнер для контента */
+  .content {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Анимация для появления контента */
+  .content section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSection 2s forwards;
+  }
+  
+  @keyframes fadeSection {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Стили для навигации */
+  .game-info {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+  /* Основные стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  /* Стили для меню */
+  nav {
+    margin-bottom: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ff6347;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f0e68c;
+    transform: scale(1.1);
+  }
+  
+  /* Заголовок сайта */
+  h1 {
+    font-size: 60px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Анимация для заголовка */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Контейнер для секций */
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  section {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  section:hover {
+    background-color: #444;
+    transform: translateY(-5px);
+  }
+  
+  /* Фоны для секций */
+
+  
+  #games {
+    background: #2b2b2b;
+  }
+  
+  #news {
+    background: #3b3b3b;
+  }
+  
+  #contact {
+    background: #4b4b4b;
+  }
+  
+  /* Стили для заголовков секций */
+  section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .game-info {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  /* Стили для кнопок */
+  .button {
+    padding: 15px 30px;
+    border: 2px solid #ff6347;
+    background-color: transparent;
+    color: #ff6347;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button:hover {
+    background-color: #ff6347;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Плавная анимация появления секций */
+  @keyframes fadeSection {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content section {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSection 2s forwards;
+  }
+  
