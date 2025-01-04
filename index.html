@@ -4,48 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Геймерский Сайт</title>
-  <link rel="stylesheet" href="сайт.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Меню сайта -->
-  <nav>
-    <ul>
-      <li><a href="#home">Главная</a></li>
-      <li><a href="#games">Игры</a></li>
-      <li><a href="#news">Новости</a></li>
-      <li><a href="#contact">Контакты</a></li>
-    </ul>
-  </nav>
-
-  <!-- Заголовок сайта -->
-  <h1>Геймерский Мир</h1>
+  <!-- Главное меню -->
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#games">Игры</a></li>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <h1 class="site-title">Геймерский Мир</h1>
+  </header>
 
   <!-- Основной контент -->
-  <div class="content">
-    <section id="home">
+  <main>
+    <section id="home" class="section">
       <h2>Главная</h2>
-      <p class="game-info">Добро пожаловать в наш геймерский сайт!</p>
+      <p>Добро пожаловать в наш геймерский сайт!</p>
     </section>
 
-    <section id="games">
+    <section id="games" class="section">
       <h2>Игры</h2>
-      <p class="game-info">Здесь вы найдете самые популярные игры года!</p>
-      <button class="button" onclick="window.location.href='index.1.html'">Узнать больше</button>
+      <p>Здесь вы найдете самые популярные игры года!</p>
+      <div class="game-gallery">
+        <article class="game-item">
+          <img src="header.jpg" alt="Beholder 3">
+          <h3>Beholder 3: The Plague of Shadows</h3>
+          <p>Хоррор-игра с элементами исследования, головоломок и стелса.</p>
+        </article>
+
+        <article class="game-item">
+          <img src="e3d22ffa-dbd7-4795-b5ee-a76dee60d40c.jpg" alt="63 Days">
+          <h3>63 Days</h3>
+          <p>Тактическая стратегия о событиях Варшавского восстания.</p>
+        </article>
+
+        <article class="game-item">
+          <img src="maxresdefault.jpg" alt="Hogwarts Legacy">
+          <h3>Hogwarts Legacy</h3>
+          <p>Игра по вселенной Гарри Поттера с открытым миром.</p>
+        </article>
+
+        <article class="game-item">
+          <img src="war_thunder.jpg" alt="War Thunder">
+          <h3>War Thunder</h3>
+          <p>Многопользовательская онлайн-игра с военной тематикой.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="news">
+    <section id="news" class="section">
       <h2>Новости</h2>
-      <p class="game-info">Читай самые свежие новости из мира игр!</p>
-      <button class="button" onclick="window.location.href='index.2.html'">Подписаться на новости</button>
+      <ul class="news-list">
+        <li>Выход новой консоли Sony PlayStation 6.</li>
+        <li>Новая часть "The Legend of Zelda: Breath of the Wild 2".</li>
+        <li>Эксклюзивные игры для Xbox Series X/S.</li>
+        <li>Международные турниры по "Fortnite".</li>
+        <li>Крупное обновление "World of Warcraft".</li>
+      </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
       <h2>Контакты</h2>
-      <p class="game-info">Свяжитесь с нами для любых вопросов.</p>
-      <button class="button" onclick="window.location.href='index.3.html'">Связаться</button>
+      <p>Телефон: +7 (744) 555-33<br>Электронная почта: hhgorhho@gmail.kz</p>
     </section>
-  </div>
-  <script src="сайт.js"></script>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer>
+    <p>&copy; 2025 Геймерский Мир. Все права защищены.</p>
+  </footer>
+
+  <!-- Подключение скриптов -->
+  <script src="scripts.js"></script>
 </body>
 </html>
